@@ -24,9 +24,6 @@ type
 
   end;
 
-  OpFunc = function(x, y: Integer): Integer;
-  OpFuncPtr = ^Pointer;
-
 var
   MainForm: TMainForm;
 
@@ -70,10 +67,9 @@ end;
 
 procedure TMainForm.FormCreate(Sender: TObject);
 begin
-  cboOperator.ReadOnly := true;
   cboOperator.SelText := '+';
 end;
 
 begin
-  ShowMessage('init');
+  ShowMessage('Enjoy yourself!');
 end.
