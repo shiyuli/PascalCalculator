@@ -1,0 +1,52 @@
+object MainForm: TMainForm
+  Left = 239
+  Height = 360
+  Top = 588
+  Width = 480
+  Caption = 'MainForm'
+  ClientHeight = 360
+  ClientWidth = 480
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  LCLVersion = '2.0.2.0'
+  object btnAdd: TButton
+    Left = 176
+    Height = 38
+    Top = 200
+    Width = 113
+    Caption = 'add'
+    OnClick = btnAddClick
+    TabOrder = 0
+  end
+  object txtNumLeft: TEdit
+    Left = 32
+    Height = 32
+    Top = 96
+    Width = 176
+    NumbersOnly = True
+    TabOrder = 1
+  end
+  object txtNumRight: TEdit
+    Left = 272
+    Height = 32
+    Top = 96
+    Width = 176
+    NumbersOnly = True
+    TabOrder = 2
+  end
+  object cboOperator: TComboBox
+    Left = 224
+    Height = 32
+    Top = 32
+    Width = 150
+    ItemHeight = 24
+    Items.Strings = (
+      '+'
+      '-'
+      '*'
+      '/'
+    )
+    ParentShowHint = False
+    TabOrder = 3
+  end
+end
